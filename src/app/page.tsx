@@ -28,11 +28,18 @@ export default function Home() {
       <br />
       <h1 className={myFont.className}>My custom font</h1>
       <Button
+        className="mt-4"
         onClick={() => {
           router.push("/carousel");
         }}
       >
         Carousel
+      </Button>
+      <Button className="mt-4" onClick={() => router.push("/flex")}>
+        Flex Page
+      </Button>
+      <Button className="mt-4" onClick={() => router.push("/grid")}>
+        Grid Page
       </Button>
     </div>
   );
